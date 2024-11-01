@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontakt</title>
+	<!-- Verknüpfung zur CSS-Datei für das Styling der Seite -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Font Awesome Script für Social Media-Icons im Footer -->
+	<script src="https://kit.fontawesome.com/3e99b592b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- Header-Bereich mit Logo und Navigation -->
+	<header>
+		<!-- Logo-Bild im Header -->
+		<img src="images/drumsegelogo.jpg" height="70px">
+		<!-- Navigationsleiste mit Links zu den Hauptseiten -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Hauptseite</a></li>
+				<li><a href="index.html#aboutme">About Us</a></li>
+				<li><a href="galerie.html">Galerie</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Slider-Bereich mit Navigation -->
+	<div class="slider" style="padding:50px 50px;">
+		<div class="breadcrumb">
+			<ul>
+				<li>Hauptseite</li>
+				<li>Kontakt</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- Hauptbereich für den Kontakt -->
+	<a name="Kontakt"></a>
+	<div class="main"
+		<div class="aboutDiv" style="display: flex;">
+            <!-- Eingebettete Google Maps Karte, um den Standort anzuzeigen -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.2886567707947!2d7.839117475711458!3d47.56217187118587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47904b43a688d677%3A0x66a6530d3c8a6b48!2sPoststrasse%202%2C%204313%20M%C3%B6hlin!5e0!3m2!1sde!2sch!4v1717577626029!5m2!1sde!2sch" 
+			height="500" 
+			width="100%"
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+		<div class="aboutDiv" style="padding:20px;">
+			<h2>Kontakt</h2>
+			<!-- Kontaktformular zur Eingabe von Informationen -->
+			<form  id="forms" class="contact">
+				<div class="form-group">
+					<label for="name">Name & Vorname</label>
+					<input type="text" id="name"   required> <!-- Eingabefeld für den Namen, Pflichtfeld -->
+				</div>
+				<div class="form-group">
+					<label>Telefonnummer</label>
+					<input type="tel" name="" id="phone" pattern="[0-9]+" required> <!-- Eingabefeld für die Telefonnummer, akzeptiert nur Zahlen, Pflichtfeld -->
+				</div>
+				<div class="form-group">
+					<label for="email">Email Adresse</label>
+					<input type="email" id="email" name="" required> <!-- Eingabefeld für die Email-Adresse, Pflichtfeld -->
+				</div>
+				<div class="form-group">
+					<label>Ihre Nachricht</label>
+					<textarea id="message" rows="10"></textarea> <!-- Textbereich für die Nachricht -->
+				</div>
+				<div class="form-group">
+					<button type="submit" id="sendButton">Senden</button> <!-- Absende-Button des Formulars -->
+				</div>
+			</form>
+			
+		</div>
+	</div>
+
+	<!-- Footer-Bereich mit Copyright-Informationen und Social Media-Links -->
+	<footer>
+		<small>Copyright @ Ege Ulu und Beren Atici Alle Rechte vorbehalten 2024.</small>
+		<ul>
+			<!-- Links zu verschiedenen Social Media Plattformen mit Font Awesome Icons -->
+			<li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/official_ege1907/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+			<li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+			<li><a href="https://www.twitter.com/x" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+		</ul>
+	</footer>
+
+	<script src="javascript.js"></script>
+
+</body>
+</html>
