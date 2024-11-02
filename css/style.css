@@ -38,11 +38,17 @@ header ul li a:hover{
 	/* z-index: 0; */
 }
 
+#mainpage{
+	margin-top: 20px;
+}
+
 #sendButton:hover{
 background-color: darkgreen;
 }
 
-
+.aboutDiv_solo {
+	text-align: center;
+}
  
 .main{
 	position: relative;
@@ -87,15 +93,18 @@ background-color: darkgreen;
 	flex-wrap: wrap;
 }
 .box{
-	flex: 0 0 33.33%;
+	flex: 0 0 30%;
 	box-sizing: border-box;
 	padding: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Schatten */
+
 }
 .box a{
 	color:#000;
 	text-decoration: none;
 }
 .contentBox{
+	justify-content: space-around;
 	border:1px solid #fafafa;
 	border-radius: 10px;
 	padding: 5px;
