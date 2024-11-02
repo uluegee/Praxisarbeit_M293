@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Blog</title>
-	<!-- Verknüpfung zur CSS-Datei für das Styling der Seite -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- Font Awesome Script für Social Media-Icons im Footer -->
-	<script src="https://kit.fontawesome.com/3e99b592b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <title>Blog</title>
+    <!-- Verknüpfung zur CSS-Datei für das Styling der Seite -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Font Awesome Script für Social Media-Icons im Footer -->
+    <script
+      src="https://kit.fontawesome.com/3e99b592b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header-Bereich mit Logo und Navigation -->
+    <header>
+      <!-- Logo der Seite -->
+      <img src="images/drumsegelogo.jpg" height="70px" />
+      <!-- Navigationsleiste mit Links zu den Hauptseiten -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Hauptseite</a></li>
+          <li><a href="index.html#aboutme">About Us</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<!-- Header-Bereich mit Logo und Navigation -->
-	<header>
-		<!-- Logo der Seite -->
-		<img src="images/drumsegelogo.jpg" height="70px">
-		<!-- Navigationsleiste mit Links zu den Hauptseiten -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Hauptseite</a></li>
-				<li><a href="index.html#aboutme">About Us</a></li>
-				<li><a href="galerie.html">Galerie</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
-			</ul>
-		</nav>
-	</header>
+    <!-- Slider-Bereich mit Navigation -->
+    <div class="slider" style="padding: 50px 50px">
+      <!-- Anzeige der aktuellen Seitenstruktur -->
+      <div class="breadcrumb">
+        <ul>
+          <li>Hauptseite</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+    </div>
 
-	<!-- Slider-Bereich mit Navigation -->
-	<div class="slider" style="padding:50px 50px;">
-		<!-- Anzeige der aktuellen Seitenstruktur -->
-		<div class="breadcrumb">
-			<ul>
-				<li>Hauptseite</li>
-				<li>Blog</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Hauptbereich des Blogs mit Blogbeiträgen -->
+    <a name="Über"></a>
+    <div class="main">
+      <div class="cardBox">
+        <h2>Blog</h2>
+        <div class="content">
+          <!-- Einzelne Blogbeiträge in Boxen dargestellt -->
+          <div class="box">
+            <div class="contentBox">
+              <img src="images/about.jpg" />
+              <!-- Bild für den Beitrag -->
+              <h2>
+                <a href="noten-zum-ausdrucken.html"
+                  >Legendäre Schlagzeuger der Musikgeschichte</a
+                >
+              </h2>
+              <!-- Titel mit Link zum Artikel -->
+              <p>
+                Hier findest du Informationen zu Weltweit bekannten
+                Schlagzeuger.
+              </p>
+              <!-- Kurze Beschreibung des Beitrags -->
+            </div>
+          </div>
+          <div class="box">
+            <div class="contentBox">
+              <img src="images/about.jpg" />
+              <h2>
+                <a href="Ausrustungsberatung.html">Ausrüstungsberatung</a>
+              </h2>
+              <p>
+                Hier findest du eine Beratung für die verschiedenen Accessoires,
+                wie Drumsticks etc. die du brauchst.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="contentBox">
+              <img src="images/about.jpg" />
+              <h2><a href="Notenblatt.html">Video</a></h2>
+              <p>Hier findest du ein Video von einem Drum-Solo</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="contentBox">
+              <img src="images/about.jpg" />
+              <h2><a href="Geschichte.html">Geschichte</a></h2>
+              <p>
+                Hier erfährst du etwas über die Geschichte des Schlagzeugs und
+                Schlagzeugspiels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Hauptbereich des Blogs mit Blogbeiträgen -->
-	<a name="Über"></a> 
-	<div class="main">
-		<div class="cardBox">
-			<h2>Blog</h2>
-			<div class="content">
-
-				<!-- Einzelne Blogbeiträge in Boxen dargestellt -->
-				<div class="box">
-                    <div class="contentBox">
-                        <img src="images/about.jpg"> <!-- Bild für den Beitrag -->
-                        <h2><a href="noten-zum-ausdrucken.html">Legendäre Schlagzeuger der Musikgeschichte</a></h2> <!-- Titel mit Link zum Artikel -->
-                        <p>Hier findest du Informationen zu Weltweit bekannten Schlagzeuger.</p> <!-- Kurze Beschreibung des Beitrags -->
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="contentBox">
-                        <img src="images/about.jpg">
-                        <h2><a href="Ausrustungsberatung.html">Ausrüstungsberatung</a></h2>
-                        <p>Hier findest du eine Beratung für die verschiedenen Accessoires, wie Drumsticks etc. die du brauchst.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="contentBox">
-                        <img src="images/about.jpg">
-                        <h2><a href="Notenblatt.html">Video</a></h2>
-                        <p>Hier findest du ein Video von einem Drum-Solo</p>
-                    </div>
-                </div>
-				<div class="box">
-                    <div class="contentBox">
-                        <img src="images/about.jpg">
-                        <h2><a href="Geschichte.html">Geschichte</a></h2>
-                        <p>Hier erfährst du etwas über die Geschichte des Schlagzeugs und Schlagzeugspiels.</p>
-                    </div>
-                </div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer-Bereich mit Copyright und Social Media Links -->
-	<footer>
-		<small>Copyright @ Ege Ulu und Beren Atici Alle Rechte vorbehalten 2024.</small>
-		<ul>
-			<!-- Social Media Links mit Font Awesome Icons für verschiedene Plattformen -->
-			<li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-			<li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-			<li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-		</ul>
-	</footer>
-
-</body>
+    <!-- Footer-Bereich mit Copyright und Social Media Links -->
+    <footer>
+      <small>
+        Copyright @Atici Beren, Brun Lenny und Ulu Ege Alle Rechte vorbehalten
+        2024.
+      </small>
+      <ul>
+        <!-- Social Media Links mit Font Awesome Icons für verschiedene Plattformen -->
+        <li>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

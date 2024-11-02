@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ausrüstungsberatung</title>
-	<!-- Verknüpfung zur CSS-Datei für das Styling der Seite -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- Font Awesome Script für die Icons der sozialen Medien -->
-	<script src="https://kit.fontawesome.com/3e99b592b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <title>Ausrüstungsberatung</title>
+    <!-- Verknüpfung zur CSS-Datei für das Styling der Seite -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Font Awesome Script für die Icons der sozialen Medien -->
+    <script
+      src="https://kit.fontawesome.com/3e99b592b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header-Bereich mit Logo und Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <!-- Logo der Seite, welcher als Button funkioniert. -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/drumsegelogo.jpg" id="Mainpicture" alt="Logo"
+            /></a>
+          </div>
+          <li><a href="index.html">Hauptseite</a></li>
+          <li><a href="#aboutme">About Us</a></li>
+          <!-- Link zum "Über uns"-Bereich auf derselben Seite -->
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<!-- Header-Bereich mit Logo und Navigation -->
-	<header>
-		<!-- Logo der Seite -->
-		<img src="images/drumsegelogo.jpg" height="70px">
-		<!-- Navigationsleiste mit Links zu den Hauptseiten -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Hauptseite</a></li>
-				<li><a href="index.html#aboutme">About Us</a></li>
-				<li><a href="galerie.html">Galerie</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
-			</ul>
-		</nav>
-	</header>
+    <!-- Slider-Bereich mit Navigation -->
+    <div class="slider" style="padding: 50px 50px">
+      <!-- Anzeige der aktuellen Seitenstruktur -->
+      <div class="breadcrumb">
+        <ul>
+          <li>Hauptseite</li>
+          <li>Blog</li>
+          <li>Ausrüstungsberatung</li>
+        </ul>
+      </div>
+    </div>
 
-	<!-- Slider-Bereich mit Navigation -->
-	<div class="slider" style="padding:50px 50px;">
-		<!-- Anzeige der aktuellen Seitenstruktur -->
-		<div class="breadcrumb">
-			<ul>
-				<li>Hauptseite</li>
-				<li>Blog</li>
-				<li>Ausrüstungsberatung</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Hauptbereich der Seite mit dem Inhalt zur Ausrüstungsberatung -->
+    <a name="Über"></a>
+    <div class="main">
+      <div class="aboutDiv" style="display: flex">
+        <!-- Bild die gesamte Breite einnimmt -->
+        <img src="images/about.jpg" style="width: 100%" />
+      </div>
+      <div class="aboutDiv" style="padding: 20px">
+        <!-- Sektion über Schlagzeugsets für Anfänger -->
+        <h2>Schlagzeug für Anfänger</h2>
+        <p>Millenium Focus Junior Drum Set Black</p>
+        <p>Millenium MX422 Standard</p>
+        <p>Tama Imperialstar 22</p>
+        <br />
+        <!-- Sektion über Schlagzeugsets für Fortgeschrittene -->
+        <h2>Schlagzeug für Fortgeschrittene</h2>
+        <p>Mapex Comet Stage Dark Black</p>
+        <p>Gretsch Energy Studio Black</p>
+        <p>Tama Starclassic Bubinga 22</p>
+      </div>
+    </div>
 
-	<!-- Hauptbereich der Seite mit dem Inhalt zur Ausrüstungsberatung -->
-	<a name="Über"></a> 
-	<div class="main">
-		<div class="aboutDiv" style="display: flex;">
-            <!-- Bild die gesamte Breite einnimmt -->
-            <img src="images/about.jpg" style="width:100%;">
-        </div>
-		<div class="aboutDiv" style="padding:20px;">
-			<!-- Sektion über Schlagzeugsets für Anfänger -->
-			<h2>Schlagzeug für Anfänger</h2>
-			<p>Millenium Focus Junior Drum Set Black</p>
-            <p>Millenium MX422 Standard</p>
-			<p>Tama Imperialstar 22</p>
-			<br>
-			<!-- Sektion über Schlagzeugsets für Fortgeschrittene -->
-			<h2>Schlagzeug für Fortgeschrittene</h2>
-			<p>Mapex Comet Stage Dark Black</p>
-			<p>Gretsch Energy Studio Black</p>
-			<p>Tama Starclassic Bubinga 22</p>
-		</div>
-	</div>
-
-	<!-- Footer-Bereich mit Copyright-Information und Social Media Links -->
-	<footer>
-		<small>Copyright @ Ege Ulu und Beren Atici Alle Rechte vorbehalten 2024.</small>
-		<ul>
-			<!-- Links zu verschiedenen Social Media Plattformen mit Icons -->
-			<li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-			<li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-			<li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-		</ul>
-	</footer>
-
-</body>
+    <!-- Footer-Bereich mit Copyright-Information und Social Media Links -->
+    <footer>
+      <small>
+        Copyright @Atici Beren, Brun Lenny und Ulu Ege Alle Rechte vorbehalten
+        2024.
+      </small>
+      <ul>
+        <!-- Links zu verschiedenen Social Media Plattformen mit Icons -->
+        <li>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

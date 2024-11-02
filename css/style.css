@@ -4,6 +4,9 @@ body{
 	margin:0px;	
 	background-color: #f1f1f1;
 }
+#Mainpicture {
+	height: 70px;
+}
 header{
 	width:100%;
 	background-color: #1F1B24;
@@ -30,7 +33,7 @@ header ul li a:hover{
 	background-position: bottom;
 	text-align: center;
 	padding:100px 50px;
-	color:rgb(166, 121, 32);
+	color: #D84315;
 	font-family: "Roboto", sans-serif;
 	/* z-index: 0; */
 }
