@@ -158,3 +158,42 @@ footer ul li a{color:#fff;font-size:20px;}
 @media only screen and (max-width: 791px) {
 	.content .box{flex:0 0 100%}
 }
+
+
+
+/* Outer container styling */
+.outer-container {
+    display: flex;
+    padding: 20px;
+	justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Main grid items */
+.grid-item { 
+	display: flex;
+	justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Anpassung des Grids für kleinere Bildschirme */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Eine Spalte */
+    }
+}
+
