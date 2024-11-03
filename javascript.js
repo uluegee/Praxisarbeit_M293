@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let isValid = true;
 
         // Regular expressions for validation
-        const namePattern = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+        const namePattern = /^[A-Za-zÀ-ÿ\s'-]+$/;// Allows only letters and spaces
         const phonePattern = /^[0-9]+$/;     // Allows only numbers (already enforced by pattern in HTML)
 
         // Validate each field and show error if necessary
