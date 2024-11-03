@@ -8,28 +8,31 @@
 	<script src="https://kit.fontawesome.com/3e99b592b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-	<!-- Header-Bereich mit Logo und Navigation -->
-	<header>
-		<!-- Logo-Bild im Header -->
-		<img src="images/drumsegelogo.jpg" height="70px">
-		<!-- Navigationsleiste mit Links zu den Hauptseiten -->
+    <!-- Header-Bereich mit Logo und Navigation -->
+    <header>
 		<nav>
-			<ul>
-				<li><a href="index.html">Hauptseite</a></li>
-				<li><a href="index.html#aboutme">About Us</a></li>
-				<li><a href="galerie.html">Galerie</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
-			</ul>
+		  <ul>
+			<!-- Logo der Seite, welcher als Button funkioniert. -->
+			<div class="logo">
+			  <a href="index.html"
+				><img src="images/drumsegelogo.jpg" id="Mainpicture" alt="Logo"
+			  /></a>
+			</div>
+			<li><a href="index.html">Hauptseite</a></li>
+			<li><a href="#aboutme">About Us</a></li>
+			<!-- Link zum "Über uns"-Bereich auf derselben Seite -->
+			<li><a href="galerie.html">Galerie</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		  </ul>
 		</nav>
-	</header>
+	  </header>
 
 	<!-- Slider-Bereich mit Navigation -->
 	<div class="slider" style="padding:50px 50px;">
 		<div class="breadcrumb">
 			<ul>
-				<li>Hauptseite</li>
+				<li><a href="index.html" style="color: white;">Hauptseite</a></li>
 				<li>Kontakt</li>
 			</ul>
 		</div>
@@ -50,15 +53,16 @@
 			referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 		<div class="aboutDiv" style="padding:20px;">
-			<h2>Kontakt</h2>
+		
 			<!-- Kontaktformular zur Eingabe von Informationen -->
 			<form  id="forms" class="contact">
+				<h2>Kontakt</h2>
 				<div class="form-group">
 					<label for="name">Name & Vorname</label>
 					<input type="text" id="name"   required> <!-- Eingabefeld für den Namen, Pflichtfeld -->
 				</div>
 				<div class="form-group">
-					<label>Telefonnummer</label>
+					<label for="phone">Telefonnummer</label>
 					<input type="tel" name="" id="phone" pattern="[0-9]+" required> <!-- Eingabefeld für die Telefonnummer, akzeptiert nur Zahlen, Pflichtfeld -->
 				</div>
 				<div class="form-group">
@@ -66,7 +70,7 @@
 					<input type="email" id="email" name="" required> <!-- Eingabefeld für die Email-Adresse, Pflichtfeld -->
 				</div>
 				<div class="form-group">
-					<label>Ihre Nachricht</label>
+					<label for="message">Ihre Nachricht</label>
 					<textarea id="message" rows="10"></textarea> <!-- Textbereich für die Nachricht -->
 				</div>
 				<div class="form-group">
