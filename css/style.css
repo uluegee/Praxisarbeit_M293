@@ -298,3 +298,15 @@ footer ul li a {
         flex: 0 0 100%;
     }
 }
+
+/* Styles für rot umrandete Felder bei Fehler */
+.error-border {
+    border: 2px solid red !important; /* Füge !important hinzu, um sicherzustellen, dass die Regel angewendet wird */
+}
+
+.error-message {
+    font-size: 0.9em;
+    color: red;
+    margin-top: 5px;
+}
+
