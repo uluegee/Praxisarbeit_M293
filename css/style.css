@@ -311,24 +311,7 @@ footer ul li a {
     margin-top: 5px;
 }
 
-<<<<<<< HEAD
-/*Styling Impressum*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-=======
 /* Impressum Styling */
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
 .impressum-container {
     max-width: 800px;
     margin: 50px auto;
@@ -336,55 +319,33 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
-}
-
-h1 {
-=======
     font-family: "Roboto", sans-serif;
 }
 
 .impressum-container h1 {
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
     color: #444;
 }
 
-<<<<<<< HEAD
-.section {
-    margin-bottom: 20px;
-}
-
-.section h2 {
-=======
 .impressum-container .section {
     margin-bottom: 20px;
 }
 
 .impressum-container .section h2 {
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
 }
 
-<<<<<<< HEAD
-.section h3 {
-=======
 .impressum-container .section h3 {
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
     font-size: 1.2em;
     margin-top: 10px;
     color: #555;
 }
 
-<<<<<<< HEAD
-p {
-=======
 .impressum-container p {
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
     margin: 10px 0;
     font-size: 1em;
     color: #666;
@@ -394,20 +355,6 @@ p {
     .impressum-container {
         padding: 15px;
     }
-<<<<<<< HEAD
-    h1 {
-        font-size: 1.8em;
-    }
-    .section h2, .section h3 {
-        font-size: 1.3em;
-    }
-    p {
-        font-size: 0.9em;
-    }
-}
-
-
-=======
     .impressum-container h1 {
         font-size: 1.8em;
     }
@@ -419,4 +366,3 @@ p {
         font-size: 0.9em;
     }
 }
->>>>>>> c4adb5fd3239291b26d716f5af32a80069b960ed
