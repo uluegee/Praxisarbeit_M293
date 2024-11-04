@@ -310,3 +310,71 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/*Styling Impressum*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.impressum-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .impressum-container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .section h2, .section h3 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+
