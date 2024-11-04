@@ -1,5 +1,5 @@
-/* Importieren von Fon-Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Importieren von Font-Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
 
 body {
     margin: 0px;
@@ -47,7 +47,6 @@ header ul li a:hover {
     padding: 100px 50px;
     color: #D84315;
     font-family: "Roboto", sans-serif;
-    /* z-index: 0; */
 }
 
 #mainpage {
@@ -118,7 +117,7 @@ header ul li a:hover {
     flex: 0 0 30%;
     box-sizing: border-box;
     padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Schatten */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .box a {
@@ -176,9 +175,10 @@ header ul li a:hover {
     transition: border-color 0.3s;
     box-sizing: border-box;
 }
+
 .contact .form-group textarea{
-	max-height: 150px;
-	min-height: 30px;
+    max-height: 150px;
+    min-height: 30px;
 }
 
 .contact .form-group input[type="text"]:focus,
@@ -260,13 +260,13 @@ footer ul li a {
 /* Anpassung des Grids für kleinere Bildschirme */
 @media (max-width: 900px) {
     .grid-container {
-        grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Eine Spalte */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -302,7 +302,7 @@ footer ul li a {
 
 /* Styles für rot umrandete Felder bei Fehler */
 .error-border {
-    border: 2px solid red !important; /* Füge !important hinzu, um sicherzustellen, dass die Regel angewendet wird */
+    border: 2px solid red !important;
 }
 
 .error-message {
@@ -311,3 +311,58 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/* Impressum Styling */
+.impressum-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+}
+
+.impressum-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+.impressum-container .section {
+    margin-bottom: 20px;
+}
+
+.impressum-container .section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.impressum-container .section h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.impressum-container p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .impressum-container {
+        padding: 15px;
+    }
+    .impressum-container h1 {
+        font-size: 1.8em;
+    }
+    .impressum-container .section h2, 
+    .impressum-container .section h3 {
+        font-size: 1.3em;
+    }
+    .impressum-container p {
+        font-size: 0.9em;
+    }
+}
