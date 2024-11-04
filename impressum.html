@@ -5,8 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum - Drumsege</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Einbindung des Font Awesome Icons-Kits für Social Media-Icons im Footer -->
+    <script
+      src="https://kit.fontawesome.com/3e99b592b9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <!-- Navigationsleiste mit Links zu den verschiedenen Seiten -->
+      <nav>
+        <ul>
+          <!-- Logo der Seite, welcher als Button funkioniert. -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/drumsegelogo.jpg" id="Mainpicture" alt="Logo"
+            /></a>
+          </div>
+          <li><a href="index.html">Hauptseite</a></li>
+          <li><a href="#aboutme">About Us</a></li>
+          <!-- Link zum "Über uns"-Bereich auf derselben Seite -->
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slider-Bereich mit Navigation -->
+    <div class="slider" style="padding: 50px 50px">
+      <!-- Anzeige der aktuellen Seitenstruktur -->
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="index.html" style="color: white">Hauptseite</a></li>
+          <li>Blog</li>
+        </ul>
+      </div>
+    </div>
     <div class="impressum-container">
       <h1>Impressum</h1>
 
@@ -67,5 +102,37 @@
         </p>
       </section>
     </div>
+    <!-- Footer-Bereich mit Copyright und Social Media-Icons -->
+    <footer>
+      <small>
+        Copyright © Atici Beren, Brun Lenny und Ulu Ege. Alle Rechte vorbehalten
+        2024. Weitere Informationen finden Sie im
+        <a href="impressum.html" style="color: white">Impressum</a>.
+      </small>
+
+      <ul>
+        <!-- Social Media-Links mit Font Awesome Icons für verschiedene Plattformen -->
+        <li>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
