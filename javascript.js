@@ -92,9 +92,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Reset interaction flags
             hasInteracted = { name: false, phone: false, email: false, message: false };
 
-            // Show confirmation popup
-            alert("Ihre Nachricht wurde erfolgreich gesendet!");
-
             // Re-validate form to disable button until fields are filled again
             validateForm();
         }
@@ -103,3 +100,23 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial validation to disable button on load
     sendButton.disabled = true;
 });
+
+document.getElementById("sendButton").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevents the default submit behavior
+  
+    // Your form submission logic here (if any)
+  
+    // Show the success message
+    const successMessage = document.getElementById("successMessage");
+    successMessage.style.display = "block";
+    successMessage.innerHTML = "✅ Ihre Nachricht wurde erfolgreich gesendet!";
+    
+    // Optionally, clear the form fields if it's inside a form
+    document.getElementById("contactForm").reset();
+  
+    // Set a timer to hide the message after 3 seconds (3000 milliseconds)
+    setTimeout(function() {
+      successMessage.style.display = "none";
+    }, 3000);
+  });
+  
