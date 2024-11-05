@@ -10,13 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
 
+    let hasInteracted = {
+        name: false,
+        phone: false,
+        email: false,
+        message: false
+    };
+
     // Helper function to add or remove error message
-    function toggleError(input, condition, message) {
+    function toggleError(input, condition, message, fieldName) {
+        if (!hasInteracted[fieldName]) return; // Skip if field has not been interacted with
+
         let errorElement = input.nextElementSibling;
-        
+
         if (!condition) {
             input.classList.add('error-border');
-            sendButton.disabled = true;
             if (!errorElement || !errorElement.classList.contains('error-message')) {
                 errorElement = document.createElement('div');
                 errorElement.classList.add('error-message');
@@ -37,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         let isValid = true;
 
         // Regular expressions for validation
-        const namePattern = /^[A-Za-zÀ-ÿ\s'-]+$/;// Allows only letters and spaces
-        const phonePattern = /^[0-9]+$/;     // Allows only numbers (already enforced by pattern in HTML)
+        const namePattern = /^[A-Za-zÀ-ÿ\s'-]+$/; // Allows only letters and spaces
+        const phonePattern = /^[0-9]+$/;          // Allows only numbers
 
         // Validate each field and show error if necessary
-        toggleError(nameInput, namePattern.test(nameInput.value.trim()), "Nur Buchstaben und Leerzeichen sind erlaubt.");
-        toggleError(phoneInput, phonePattern.test(phoneInput.value.trim()), "Nur Ziffern sind erlaubt.");
-        toggleError(emailInput, emailInput.value.includes("@") && emailInput.value.includes("."), "Ungültige E-Mail-Adresse.");
-        toggleError(messageInput, messageInput.value.trim() !== "", "Dieses Feld darf nicht leer sein.");
+        toggleError(nameInput, namePattern.test(nameInput.value.trim()), "Nur Buchstaben und Leerzeichen sind erlaubt.", 'name');
+        toggleError(phoneInput, phonePattern.test(phoneInput.value.trim()), "Nur Ziffern sind erlaubt.", 'phone');
+        toggleError(emailInput, emailInput.value.includes("@") && emailInput.value.includes("."), "Ungültige E-Mail-Adresse.", 'email');
+        toggleError(messageInput, messageInput.value.trim() !== "", "Dieses Feld darf nicht leer sein.", 'message');
 
         // Check overall validity by checking if any field has 'error-border' class
         isValid = !document.querySelector('.error-border');
@@ -53,15 +61,19 @@ document.addEventListener("DOMContentLoaded", function() {
         sendButton.disabled = !isValid;
     }
 
-    // Attach event listeners to validate on input
+    // Attach event listeners to validate on input and mark fields as interacted
     [nameInput, phoneInput, emailInput, messageInput].forEach(input => {
-        input.addEventListener('input', validateForm);
+        const fieldName = input.id;
+        input.addEventListener('input', () => {
+            hasInteracted[fieldName] = true;
+            validateForm();
+        });
     });
 
     // Add a click event listener to the "Senden" button to handle form submission
     sendButton.addEventListener("click", function(event) {
         event.preventDefault();
-        
+
         if (!sendButton.disabled) {
             console.clear(); // Clear console for each new submission (optional)
             console.log("========== Kontaktformular ==========");
@@ -77,6 +89,9 @@ document.addEventListener("DOMContentLoaded", function() {
             emailInput.value = '';
             messageInput.value = '';
 
+            // Reset interaction flags
+            hasInteracted = { name: false, phone: false, email: false, message: false };
+
             // Show confirmation popup
             alert("Ihre Nachricht wurde erfolgreich gesendet!");
 
@@ -86,9 +101,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Initial validation to disable button on load
-    validateForm();
+    sendButton.disabled = true;
 });
-
-
-
-
