@@ -1,13 +1,16 @@
 /* Importieren von Font-Styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+/* Lädt die Roboto-Schriftfamilie in verschiedenen Stärken aus Google Fonts */
 
 body {
     margin: 0px;
     background-color: #f1f1f1;
+    /* Entfernt den Standard-Margin und setzt eine hellgraue Hintergrundfarbe */
 }
 
 #Mainpicture {
     height: 70px;
+    /* Legt die Höhe des Hauptlogos fest */
 }
 
 header {
@@ -15,15 +18,18 @@ header {
     background-color: #1F1B24;
     padding: 30px 0px;
     text-align: center;
+    /* Definiert das Header-Styling mit Hintergrundfarbe, Abstand und Zentrierung */
 }
 
 header ul {
     margin: 0px;
+    /* Entfernt den Standard-Margin der Navigation */
 }
 
 header ul li {
     display: inline;
     margin-right: 20px;
+    /* Stellt die Navigationslinks nebeneinander dar und fügt Abstände hinzu */
 }
 
 header ul li a {
@@ -31,11 +37,13 @@ header ul li a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     font-family: "Roboto", sans-serif;
+    /* Stilisiert die Links mit Farbe, Übergangseffekt und Schriftart */
 }
 
 header ul li a:hover {
     color: #e74c3c;
     transition: all 0.3s ease-in-out;
+    /* Ändert die Farbe der Links beim Hover */
 }
 
 
@@ -48,6 +56,7 @@ header ul li a:hover {
     padding: 100px 50px;
     color: white;
     font-family: "Roboto", sans-serif;
+    /* Definiert das Styling des Sliders mit Hintergrundbild, Zentrierung und Textfarbe */
 }
 .wText {
     color: #d0e7ff;
@@ -58,14 +67,17 @@ header ul li a:hover {
 
 #mainpage {
     margin-top: 20px;
+    /* Fügt oben Abstand hinzu */
 }
 
 #sendButton:hover {
     background-color: darkgreen;
+    /* Ändert die Hintergrundfarbe des Buttons beim Hover */
 }
 
 .aboutDiv_solo {
     text-align: center;
+    /* Zentriert den Text in der About-Sektion */
 }
 
 .main {
@@ -76,43 +88,52 @@ header ul li a:hover {
     background-color: #fff;
     display: flex;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    /* Definiert das Styling des Hauptbereichs mit Schatten und zentrierter Ausrichtung */
 }
 
 .main div.aboutDiv {
     width: 50%;
     font-family: "Roboto", sans-serif;
     color: #000;
+    /* Definiert die Hälfte der Hauptfläche und Textfarbe */
 }
 
 .main div.cardBox {
+        /* Definiert die volle Breite für das cardBox-Element und fügt Innenabstand hinzu */
     width: 100%;
     font-family: "Roboto", sans-serif;
     color: #000;
     padding: 20px;
     justify-content: center;
+
 }
 
 /* BreadCrumb */
 .breadcrumb {
     color: white;
+    /* Setzt die Textfarbe der Breadcrumb-Navigation */
 }
 
 .breadcrumb ul {
     padding: 0px;
     list-style-type: none;
+    /* Entfernt die Standard-Listendarstellung */
 }
 
 .breadcrumb ul li {
     display: inline;
     font-size: 20px;
+    /* Zeigt Listenelemente in einer Zeile an */
 }
 
 .breadcrumb ul li::after {
-    content: ' >'
+    content: ' >';
+    /* Fügt ein Trennzeichen nach jedem Listenelement hinzu */
 }
 
 .breadcrumb ul li:nth-last-child(1)::after {
-    content: ''
+    content: '';
+    /* Entfernt das Trennzeichen beim letzten Element */
 }
 
 /* Content */
@@ -120,6 +141,7 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* Ermöglicht Flexbox-Layout und das Umbruchverhalten */
 }
 
 .box {
@@ -127,11 +149,13 @@ header ul li a:hover {
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Definiert Box-Größe, Abstand und Schatten */
 }
 
 .box a {
     color: #000;
     text-decoration: none;
+    /* Stilisiert die Links innerhalb der Box */
 }
 
 .contentBox {
@@ -140,12 +164,14 @@ header ul li a:hover {
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    /* Definiert das Styling und Schatten für Content-Boxen */
 }
 
 .contentBox img {
     height: 250px;
     width: 100%;
     object-fit: cover;
+    /* Definiert Bildgrößen und Anpassung innerhalb der Content-Box */
 }
 
 /* Contact Form Styling */
@@ -157,12 +183,14 @@ header ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: "Roboto", sans-serif;
+    /* Definiert das Styling des Kontaktformulars */
 }
 
 .contact .form-group {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    /* Legt Layout und Abstand für Formulargruppen fest */
 }
 
 .contact .form-group label {
@@ -170,6 +198,7 @@ header ul li a:hover {
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
+    /* Stilisiert die Labels im Formular */
 }
 
 .contact .form-group input[type="text"],
@@ -183,11 +212,13 @@ header ul li a:hover {
     font-size: 16px;
     transition: border-color 0.3s;
     box-sizing: border-box;
+    /* Definiert das Styling für Eingabefelder */
 }
 
-.contact .form-group textarea{
+.contact .form-group textarea {
     max-height: 150px;
     min-height: 30px;
+    /* Legt Mindest- und Maximalhöhe des Textbereichs fest */
 }
 
 .contact .form-group input[type="text"]:focus,
@@ -196,11 +227,13 @@ header ul li a:hover {
 .contact .form-group textarea:focus {
     border-color: #007bff;
     outline: none;
+    /* Ändert die Randfarbe beim Fokussieren */
 }
 
 .contact .form-group textarea {
     resize: vertical;
     height: 100px;
+    /* Ermöglicht die vertikale Größenanpassung des Textbereichs */
 }
 
 .contact .form-group button {
@@ -214,10 +247,12 @@ header ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    /* Definiert die Button-Stile im Formular */
 }
 
 #sendButton:hover {
     background-color: darkgreen;
+    /* Ändert die Hintergrundfarbe des Sendebuttons beim Hover */
 }
 
 /* Footer */
@@ -228,32 +263,39 @@ footer {
     padding: 10px;
     font-family: "Roboto", sans-serif;
     color: #fff;
+    /* Definiert das Styling des Fußbereichs */
 }
 
 footer ul {
     padding: 0px;
+    /* Entfernt den Standard-Abstand für die Liste */
 }
 
 footer ul li {
     display: inline;
     margin-right: 20px;
+    /* Stellt Listenelemente nebeneinander dar */
 }
 
 footer ul li a {
     color: #fff;
     font-size: 20px;
+    /* Stilisiert die Links im Footer */
 }
 
 /* Outer container styling */
 .outer-container {
+    height: auto;
     display: flex;
     padding: 20px;
     justify-content: center;
+    /* Zentriert die äußere Container-Darstellung */
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* Erstellt ein dreispaltiges Raster */
 }
 
 /* Main grid items */
@@ -264,18 +306,21 @@ footer ul li a {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    /* Stilisiert die einzelnen Rasterelemente */
 }
 
 /* Anpassung des Grids für kleinere Bildschirme */
 @media (max-width: 900px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
+        /* Reduziert das Raster auf zwei Spalten bei kleineren Bildschirmen */
     }
 }
 
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
+        /* Wechselt zu einer Spalte auf noch kleineren Bildschirmen */
     }
 }
 
@@ -285,39 +330,47 @@ footer ul li a {
         width: 90%;
         display: block;
         padding: 20px !important;
+        /* Reduziert die Hauptbreite für schmalere Bildschirme */
     }
     .main iframe {
         width: 100%;
         height: 200px;
+        /* Passt die Größe des eingebetteten iFrame an */
     }
     .main div.aboutDiv,
     .main div.cardBox {
         width: 100%;
         padding: 0px !important;
+        /* Wechselt zur 100%-Breite für alle inneren Container */
     }
     .imageDiv {
         display: none !important;
+        /* Blendet Bilder auf kleinen Bildschirmen aus */
     }
     .content .box {
         flex: 0 0 50%;
+        /* Erhöht die Boxbreite bei mittleren Bildschirmen */
     }
 }
 
 @media only screen and (max-width: 791px) {
     .content .box {
         flex: 0 0 100%;
+        /* Wechselt die Boxen zur vollen Breite bei schmalen Bildschirmen */
     }
 }
 
 /* Styles für rot umrandete Felder bei Fehler */
 .error-border {
     border: 2px solid red !important;
+    /* Markiert fehlerhafte Eingabefelder mit rotem Rand */
 }
 
 .error-message {
     font-size: 0.9em;
     color: red;
     margin-top: 5px;
+    /* Stilisiert Fehlermeldungen */
 }
 
 /* Impressum Styling */
@@ -329,6 +382,7 @@ footer ul li a {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: "Roboto", sans-serif;
+    /* Definiert das Styling des Impressum-Containers */
 }
 
 .impressum-container h1 {
@@ -336,43 +390,52 @@ footer ul li a {
     margin-bottom: 20px;
     text-align: center;
     color: #444;
+    /* Stilisiert die Hauptüberschrift im Impressum */
 }
 
 .impressum-container .section {
     margin-bottom: 20px;
+    /* Fügt Abstand zwischen den Impressum-Bereichen hinzu */
 }
 
 .impressum-container .section h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
+    /* Stilisiert die Unterüberschriften im Impressum */
 }
 
 .impressum-container .section h3 {
     font-size: 1.2em;
     margin-top: 10px;
     color: #555;
+    /* Stilisiert die weiteren Unterüberschriften */
 }
 
 .impressum-container p {
     margin: 10px 0;
     font-size: 1em;
     color: #666;
+    /* Definiert den Textstil der Impressum-Absätze */
 }
 
 @media (max-width: 600px) {
     .impressum-container {
         padding: 15px;
+        /* Reduziert die Polsterung im Impressum bei kleinen Bildschirmen */
     }
     .impressum-container h1 {
         font-size: 1.8em;
+        /* Verringert die Schriftgröße der Hauptüberschrift */
     }
     .impressum-container .section h2, 
     .impressum-container .section h3 {
         font-size: 1.3em;
+        /* Verringert die Schriftgröße der Unterüberschriften */
     }
     .impressum-container p {
         font-size: 0.9em;
+        /* Verringert die Schriftgröße der Absätze */
     }
 }
 
