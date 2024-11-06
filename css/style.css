@@ -116,6 +116,11 @@ header ul li a:hover {
     /* Definiert die Hälfte der Hauptfläche und Textfarbe */
 }
 
+.cardBox h2 {
+    text-align: center;
+    width: 100%;
+}
+
 .main div.cardBox {
         /* Definiert die volle Breite für das cardBox-Element und fügt Innenabstand hinzu */
     width: 100%;
@@ -166,7 +171,6 @@ header ul li a:hover {
     flex: 0 0 30%;
     box-sizing: border-box;
     padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     /* Definiert Box-Größe, Abstand und Schatten */
 }
 
@@ -185,13 +189,6 @@ header ul li a:hover {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contentBox iframe {
-    width: 100%;
-    max-width: 560px; /* Maximalbreite für das Video */
-    height: 315px; /* Höhe für das Video */
-    margin-bottom: 15px;
 }
 .contentBox img {
     height: 250px;
