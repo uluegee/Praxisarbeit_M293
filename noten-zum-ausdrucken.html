@@ -9,6 +9,52 @@
       src="https://kit.fontawesome.com/3e99b592b9.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .drummer-gallery {
+        position: relative;
+        width: 400px; /* Passe die Breite an deine Bedürfnisse an */
+        height: 400px; /* Passe die Höhe an deine Bedürfnisse an */
+      }
+
+      .drummer-gallery img {
+        position: absolute;
+        width: 50%; /* Größe der Eckbilder */
+        height: 50%;
+        object-fit: cover;
+        border-radius: 8px; /* Optional: Runde die Ecken etwas ab */
+      }
+
+      .drummer-gallery .corner.top-left {
+        top: 0;
+        left: 0;
+      }
+
+      .drummer-gallery .corner.top-right {
+        top: 0;
+        right: 0;
+      }
+
+      .drummer-gallery .corner.bottom-left {
+        bottom: 0;
+        left: 0;
+      }
+
+      .drummer-gallery .corner.bottom-right {
+        bottom: 0;
+        right: 0;
+      }
+
+      .drummer-gallery .center {
+        top: 50%;
+        left: 50%;
+        width: 45%; /* Größeres Bild für die Mitte */
+        height: 45%;
+        transform: translate(-50%, -50%);
+        z-index: 10; /* Überlagert die Eckbilder */
+        border-radius: 50%; /* Optional: Runde das mittlere Bild kreisförmig ab */
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <!-- Header-Bereich mit Logo und Navigationsleiste -->
@@ -46,8 +92,29 @@
     <!-- Anker für die "Über" Sektion -->
     <div class="main">
       <div class="aboutDiv" style="display: flex">
-        <!-- Bild in voller Breite zur Illustration -->
-        <img src="images/about.jpg" style="width: 100%" />
+        <div class="drummer-gallery" style="width: 100%; height: 100%">
+          <img
+            src="images/Ginger Baker.jpg"
+            class="corner top-left"
+            alt="Ginger_Baker"
+          />
+          <img
+            src="images/Neil_Peart.jpg"
+            class="corner top-right"
+            alt="Neil_Peart"
+          />
+          <img
+            src="images/Mitch_Mitchell.jpg"
+            class="corner bottom-left"
+            alt="Mitch_Mitchell"
+          />
+          <img
+            src="images/Keith_Moon.jpg"
+            class="corner bottom-right"
+            alt="Keith_Moon"
+          />
+          <img src="images/John Bonham.jpg" class="center" alt="John Bonham" />
+        </div>
       </div>
       <div class="aboutDiv" style="padding: 20px">
         <!-- Abschnitte mit Informationen über verschiedene legendäre Schlagzeuger -->
