@@ -46,6 +46,24 @@ header ul li a:hover {
     /* Ändert die Farbe der Links beim Hover */
 }
 
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+.wiggle-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dunkler Overlay-Hintergrund */
+    border-radius: 20%;
+    display: inline-block;
+}
+
+.wiggle-container.wiggle-active {
+    animation: wiggle 0.5s ease-in-out; /* Animation nur einmal abspielen */
+}
+
 
 /* Slider */
 .slider {
@@ -59,7 +77,7 @@ header ul li a:hover {
     /* Definiert das Styling des Sliders mit Hintergrundbild, Zentrierung und Textfarbe */
 }
 .wText {
-    color: #d0e7ff;
+    color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 

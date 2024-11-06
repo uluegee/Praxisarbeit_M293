@@ -9,9 +9,22 @@
       src="https://kit.fontawesome.com/3e99b592b9.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wiggleContainer = document.querySelector('.wiggle-container');
+        
+        setInterval(() => {
+          wiggleContainer.classList.add('wiggle-active');
+          
+          setTimeout(() => {
+              wiggleContainer.classList.remove('wiggle-active');
+          }, 500); // 0.5 Sekunden - Dauer der Animation
+          
+        }, 3000); // 3 Sekunden zwischen den Wiggles
+      });
+    </script>
   </head>
   <body>
-    
     <!-- Header-Bereich mit Logo und Navigationsleiste -->
     <header>
       <!-- Navigationsleiste mit Links zu den verschiedenen Seiten -->
@@ -35,12 +48,14 @@
 
     <!-- Begrüßungsabschnitt mit einer kurzen Einführung -->
     <div class="slider">
-     <!-- Transparenter Overlay-Container -->
+      <!-- Transparenter Overlay-Container -->
+      <div class="wiggle-container">
         <h1 class="wText">Willkommen!</h1>
-      <h2 class="wText">
-        Tauche ein in den Groove – Alles, was du über Drums wissen musst, an
-        einem Ort!
-      </h2>
+        <h2 class="wText">
+          Tauche ein in den Groove – Alles, was du über Drums wissen musst, an
+          einem Ort!
+        </h2>
+      </div>
     </div>
 
     <!-- Anker für den "About Me"-Abschnitt -->
@@ -55,19 +70,19 @@
           Auf dieser Webseite findest du viele nützliche Infos und Tipps zum
           Schlagzeugspielen, egal ob du Anfänger bist oder schon viel Erfahrung
           hast. Hier teile ich mit dir:
-          <br>
-          <br />Ausrüstungsberatung: Ich gebe dir Tipps, welche Schlagzeuge und
+          <br><br />
+          Ausrüstungsberatung: Ich gebe dir Tipps, welche Schlagzeuge und
           welches Zubehör gut sind, damit du das Richtige für dich findest.
-          <br />
-          <br />Lernmaterialien: Du findest hier Videos und Artikel, die dir
+          <br><br />
+          Lernmaterialien: Du findest hier Videos und Artikel, die dir
           helfen, besser Schlagzeug zu spielen.
-          <br />
-          <br />Erfahrungen und Geschichten: Ich erzähle dir von meinen eigenen
+          <br><br />
+          Erfahrungen und Geschichten: Ich erzähle dir von meinen eigenen
           Erfahrungen als Schlagzeuger und was ich dabei alles gelernt habe.
-          <br />
         </p>
       </div>
     </div>
+
     <div class="main" id="mainpage">
       <div class="aboutDiv" id="aboutme" style="padding: 20px">
         <h2>Wer sind wir?</h2>
@@ -82,15 +97,18 @@
           habe ich in 2 verschiedenen Bands gespielt und an verschiedenen
           Konzerten mitgemacht. Pop, Jazz und Rock gehören zu meinen
           Lieblingsgenres.
-          <br />
-          <br />
+          <br><br />
           Hallo, ich heiße Beren. Die Idee, eine Plattform über das Schlagzeug
           zu gestalten, kam von Ege, und ich fand die Idee sofort spannend. Zu
           mir persönlich: In meiner Freizeit gehe ich gern ins Fitnessstudio und
           genieße es, mit meinem Motorrad unterwegs zu sein.
-          <br>
-          <br>
-          <p>Ich heisse Lenny und bin 19 Jahre alt. Ich gehe gerne mit Freunden aus. Derzeit besuche ich die IBZ Basel, wo ich im Rahmen eines Schulmoduls die Aufgabe habe, eine Webseite als Praxisarbeit zu erstellen. Die Idee, diese Webseite zu gestalten, kam von meinem Freund Ege, mit dem ich diese Aufgabe in der Schule umsetze.
+          <br><br />
+          <p>
+            Ich heisse Lenny und bin 19 Jahre alt. Ich gehe gerne mit Freunden
+            aus. Derzeit besuche ich die IBZ Basel, wo ich im Rahmen eines
+            Schulmoduls die Aufgabe habe, eine Webseite als Praxisarbeit zu
+            erstellen. Die Idee, diese Webseite zu gestalten, kam von meinem
+            Freund Ege, mit dem ich diese Aufgabe in der Schule umsetze.
           </p>
         </p>
       </div>
@@ -132,6 +150,5 @@
         </li>
       </ul>
     </footer>
-
   </body>
 </html>
