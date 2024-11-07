@@ -4,7 +4,7 @@
 
 ## Projektübersicht
 
-Die **Drumsege**-Website bietet Benutzern Informationen über Schlagzeug, Lernressourcen und eine interaktive Erfahrung. Sie enthält eine Kontaktseite, auf der Besucher Anfragen stellen können, sowie gestylte Eingabefelder für eine verbesserte Benutzererfahrung. Das Projekt integriert HTML, CSS und JavaScript für die FrontEnd-Funktionalität. Das Projekt enthält kein Webserver oder BackEnd teil, die Benutzereingaben werden mithilfe von JavaScript in der Konsole ausgegeben und werden **nicht** gespeichert.
+Die **Drumsege**-Website bietet Benutzern Informationen über Schlagzeug, Lernressourcen und eine interaktive Erfahrung. Sie enthält eine Kontaktseite, auf der Besucher Anfragen stellen können, sowie gestylte Eingabefelder für eine verbesserte Benutzererfahrung. Das Projekt integriert HTML, CSS und JavaScript für die FrontEnd-Funktionalität. Das Projekt enthält ein Webserver aber kein BackEnd teil, die Benutzereingaben werden mithilfe von JavaScript in der Konsole ausgegeben und werden **nicht** gespeichert.
 
 ## Projektkomponenten
 
